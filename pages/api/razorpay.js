@@ -9,11 +9,14 @@ export default async function handler(req, res) {
       key_id: process.env.RAZORPAY_KEY,
       key_secret: process.env.RAZORPAY_SECRET,
     });
-
+    
+    const pay = JSON.parse(req.body);
+    const razor = pay.razor;
+    const cash = pay.cash;
     // Create an order -> generate the OrderID -> Send it to the Front-end
     // Also, check the amount and currency on the backend (Security measure)
     const payment_capture = 1;
-    const amount = 500;
+    const amount = Number(razor);
     const currency = "INR";
     const options = {
       amount: (amount * 100).toString(),
