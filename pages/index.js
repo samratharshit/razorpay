@@ -125,12 +125,18 @@ const Hero = ({ onClick}) => {
         <p className="text-sm text-gray-300 font-light tracking-wide w-[300px] mb-10">
         Razorpay payments has been successfully integrated in this PWA
         </p>
-        <div className="bg-gradient-to-r from-[#3e4044] to-[#1D2328] p-[1px] rounded-md mb-4">
+        <div className="bg-gradient-to-r from-[#3e4044] to-[#1D2328] p-[1px] rounded-md mb-4 p-1">
         
 
           <button
             onClick={onClick}
-            className="bg-gradient-to-r from-[#2E3137] to-[#1D2328] rounded-md w-full py-4 shadow-xl drop-shadow-2xl text-gray-300 font-bold"
+            className="bg-gradient-to-r from-[#2E3137] to-[#1D2328] rounded-md w-full py-3 shadow-xl drop-shadow-2xl text-gray-300 font-bold  mb-3"
+          >
+            Try Now!
+          </button>
+          <button
+            onClick={onClick}
+            className="bg-gradient-to-r from-[#2E3137] to-[#1D2328] rounded-md w-full py-3 shadow-xl drop-shadow-2xl text-gray-300 font-bold "
           >
             Try Now!
           </button>
